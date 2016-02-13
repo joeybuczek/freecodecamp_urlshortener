@@ -2,7 +2,7 @@
 
 Free Code Camp Challenge
 
-This app's functionlaity is a basic URL Shortener service. Append the url you wish to shorten to the `/new/` path. 
+This app's functionality is a basic URL Shortener service. Append the URL you wish to shorten to the `/new/` path. 
 The response is a JSON object with both the original URL and the shortened version. 
 All URL objects are stored in a database.
 

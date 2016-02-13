@@ -9,12 +9,16 @@ var app = express();
 // routes ===================================================================
 // html snippets
 var htmlHome = "<h2>URL Shortener Microservice</h2>" + 
+               "<p>This app's functionality is a basic URL Shortener service. </br>" + 
+               "Append the URL you wish to shorten to the <b>/new/</b> path. </br>" +
+               "The response is a JSON object with both the original URL and the shortened version. </br>" +
+               "All URL objects are stored in a database." +
                "<h3>Usage examples:</h3>" + 
-               "<pre>/new/http://www.google.com</pre>" + 
-               "<pre>/new/http://bteamphoto.com</pre>" + 
+               "<pre>https://fcc-urlshortenermicroservice.herokuapp.com/new/http://www.google.com</pre>" + 
+               "<pre>https://fcc-urlshortenermicroservice.herokuapp.com/new/http://bteamphoto.com</pre>" + 
                "<h3>Response examples:</h3>" + 
-               "<pre>{'originalUrl':'http://www.google.com','shortenedUrl':'/s/i3W'}</pre>" + 
-               "<pre>{'originalUrl':'http://bteamphoto.com','shortenedUrl':'/s/a6k'}</pre>" +
+               "<pre>{'originalUrl':'http://www.google.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/i3W'}</pre>" + 
+               "<pre>{'originalUrl':'http://bteamphoto.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/a6k'}</pre>" +
                "<h3>Invalid URL example:</h3>" +
                "<pre>{'url':'invalid'}</pre>";
 var html404 =  "<center><p style='color: darkred; margin-top:30px;'>" + 

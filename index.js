@@ -33,18 +33,20 @@ app.get(/^\/new\/http?s?\:\/\/[a-z0-9]+[.]+[a-z0-9]+/i, function (req, res) {
 
     // mongo logic - pass in url, receive response
     mongoFn.mongoNewUrl(reqUrl, function (responseObj) {
-        res.send(JSON.stringify(responseObj));
+        res.json(responseObj);
+        // res.send(JSON.stringify(responseObj));
     });    
 });
 
 // handle invalid url requests
 app.get(/^\/new\/[a-z0-9]+/i, function (req, res) {
-    res.send(JSON.stringify({'url':'invalid'}));
+    res.json({'url':'invalid'});
+    // res.send(JSON.stringify({'url':'invalid'}));
 });
 
 // handle incoming shortened url
 app.get(/^\/s\/[a-z0-9]+/i,function (req, res) {
-    var incomingUrl = req.url.slice(3);
+    var incomingUrl = "https://fcc-urlshortenermicroservice.herokuapp.com" + req.url;
     
     // mongo search
     mongoFn.mongoGetUrl(incomingUrl, function (fwdUrl) {

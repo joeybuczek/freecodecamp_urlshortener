@@ -8,15 +8,15 @@ All URL objects are stored in a database.
 
 ** Usage Examples **
 
-`http://fcc-urlshortenermicroservice.herokuapp.com/new/http://bteamphoto.com`
+`https://fcc-urlshortenermicroservice.herokuapp.com/new/http://bteamphoto.com`
 
-`http://fcc-urlshortenermicroservice.herokuapp.com/new/http://www.google.com`
+`https://fcc-urlshortenermicroservice.herokuapp.com/new/http://www.google.com`
 
 ** Response Examples **
 
-`{'originalUrl':'http://bteamphoto.com','shortenedUrl':'http://fcc-urlshortenermicroservice.herokuapp.com/s/I0K'}`
+`{'originalUrl':'http://bteamphoto.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/I0K'}`
 
-`{'originalUrl':'http://www.google.com','shortenedUrl':'http://fcc-urlshortenermicroservice.herokuapp.com/s/a6m'}`
+`{'originalUrl':'http://www.google.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/a6m'}`
 
 ** Invalid URL Example **
 

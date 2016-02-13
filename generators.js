@@ -10,7 +10,7 @@ generators.randomIntFromInterval = function (min, max) {
 generators.randomUrl = function (dbTotalRecords) {
     var randomUCase = String.fromCharCode(this.randomIntFromInterval(65, 90));
     var randomLCase = String.fromCharCode(this.randomIntFromInterval(97, 122));
-    return "http://s/" + randomUCase + dbTotalRecords + randomLCase;
+    return "https://fcc-urlshortenermicroservice.herokuapp.com/s/" + randomUCase + dbTotalRecords + randomLCase;
 };
 
 module.exports = generators;

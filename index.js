@@ -4,6 +4,8 @@ var mongoFn = require('./mongoFn');
 // server vars
 var express = require('express');
 var app = express();
+// config
+app.locals.pretty = true;
 
 
 // routes ===================================================================

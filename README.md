@@ -14,9 +14,9 @@ All URL objects are stored in a database.
 
 ** Response Examples **
 
-`{'originalUrl':'http://bteamphoto.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/I0K'}`
+`{'originalUrl':'http://bteamphoto.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/L0s'}`
 
-`{'originalUrl':'http://www.google.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/a6m'}`
+`{'originalUrl':'http://www.google.com','shortenedUrl':'https://fcc-urlshortenermicroservice.herokuapp.com/s/G1i'}`
 
 ** Invalid URL Example **
 

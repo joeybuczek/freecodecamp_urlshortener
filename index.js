@@ -70,7 +70,7 @@ app.use(function(req, res){
 // end routes ===============================================================
 
 // listen
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 app.listen(3000, function(){
     // listening...
     console.log("now listening on port 3000");

@@ -71,7 +71,7 @@ app.use(function(req, res){
 
 // listen
 var port = process.env.PORT || 8080;
-app.listen(3000, function(){
+app.listen(port, function(){
     // listening...
-    console.log("now listening on port 3000");
+    console.log("now listening on port " + port);
 });

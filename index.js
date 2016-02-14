@@ -54,7 +54,7 @@ app.get(/^\/s\/[a-z0-9]+/i,function (req, res) {
     
     // mongo search
     mongoFn.mongoGetUrl(incomingUrl, function (fwdUrl) {
-        res.send('Original url is: ' + fwdUrl);
+        res.redirect(fwdUrl);
     });
     
     // fwd logic here

@@ -38,7 +38,7 @@ app.get(/^\/new\/http?s?\:\/\/[a-z0-9]+[.]+[a-z0-9]+/i, function (req, res) {
     // mongo logic - pass in url, receive response
     mongoFn.mongoNewUrl(reqUrl, function (responseObj) {
         // res.json(responseObj);
-        res.send(JSON.stringify(responseObj, null, 4));
+        res.send(JSON.stringify(responseObj, null, '\t'));
     });    
 });
 

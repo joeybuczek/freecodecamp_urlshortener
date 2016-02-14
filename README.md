@@ -21,3 +21,13 @@ All URL objects are stored in a database.
 ** Invalid URL Example **
 
 `{'url':'invalid'}`
+
+ -
+
+The following file is required: `mongoUser.js`
+
+The contents should be as followed:
+
+`var user = "<mongodb connection string>";`
+
+`module.exports = user;`

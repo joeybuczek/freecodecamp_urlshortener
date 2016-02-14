@@ -1,6 +1,6 @@
-// Mongo Requirements
+// Mongo Requirements - mongoUser is your production mongo url connection string
 var mongo = require('mongodb').MongoClient;
-var mongoUrl = "mongodb://localhost:27017/urlshortener";
+var mongoUrl = require('./mongoUser');
 var generators = require('./generators');
 
 // MongoDB Functions ========================================================

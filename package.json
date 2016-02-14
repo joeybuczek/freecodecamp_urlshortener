@@ -1,11 +1,17 @@
 {
   "name": "expresstest",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "engines": {
+    "node": "4.1.1"
+  },
+  "description": "URL Shortener Microservice - Free Code Camp Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeybuczek/freecodecamp_urlshortener"
   },
   "author": "Joey Buczek <joe.buczek@gmail.com>",
   "license": "ISC",
